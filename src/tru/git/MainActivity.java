@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.MotionEvent;
 
 public class MainActivity extends Activity {
 
@@ -32,6 +33,12 @@ public class MainActivity extends Activity {
 			String[] args) {
 		// TODO Auto-generated method stub
 		super.dump(prefix, fd, writer, args);
+	}
+
+	@Override
+	public boolean dispatchTouchEvent(MotionEvent ev) {
+		// TODO Auto-generated method stub
+		return super.dispatchTouchEvent(ev);
 	}
 
 	@Override
